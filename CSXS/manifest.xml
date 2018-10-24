@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest
+		Version="7.0"
+		ExtensionBundleId="com.manolenso.select.guides"
+		ExtensionBundleVersion="1.0.0"
+		ExtensionBundleName="Select-Guides" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ExtensionList>
+		<Extension Id="com.manolenso.select.guides" Version="1.0.0"/>
+	</ExtensionList>
+	<ExecutionEnvironment>
+		<HostList>
+
+            <Host Name="PHXS" Version="[14.0,19.0]"/>
+            <Host Name="PHSP" Version="[14.0,19.0]"/>
+
+
+		</HostList>
+		<LocaleList>
+			<Locale Code="All"/>
+		</LocaleList>
+		<RequiredRuntimeList>
+			<RequiredRuntime Name="CSXS" Version="7.0"/>
+		</RequiredRuntimeList>
+	</ExecutionEnvironment>
+	<DispatchInfoList>
+		<Extension Id="com.manolenso.select.guides">
+			<DispatchInfo >
+				<Resources>
+				<MainPath>./index.html</MainPath>
+				<ScriptPath>./jsx/hostscript.jsx</ScriptPath>
+				</Resources>
+				<Lifecycle>
+					<AutoVisible>true</AutoVisible>
+				</Lifecycle>
+				<UI>
+					<Type>Panel</Type>
+					<Menu>Select-Guides</Menu>
+					<Geometry>
+						<Size>
+							<Height>400</Height>
+							<Width>150</Width>
+						</Size>
+					</Geometry>
+					<Icons>
+						<Icon Type="Normal">./icons/iconNormal.png</Icon>
+						<Icon Type="RollOver">./icons/blue.png</Icon>
+						<Icon Type="Disabled">./icons/iconDisabled.png</Icon>
+						<Icon Type="DarkNormal">./icons/guide_select.png</Icon>
+						<Icon Type="DarkRollOver">./icons/iconDarkRollover.png</Icon>
+					</Icons>
+				</UI>
+			</DispatchInfo>
+		</Extension>
+	</DispatchInfoList>
+</ExtensionManifest>
